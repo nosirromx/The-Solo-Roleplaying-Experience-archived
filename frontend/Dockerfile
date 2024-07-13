@@ -9,13 +9,10 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 # Install app dependencies
 COPY package.json ./
-RUN npm install
+RUN npm install --only=development
 
 # Copy the rest of your application's source code to the container
 COPY . ./
 
-# Build the production build
-RUN npm run build
-
-# Start the app
+# Start the app in development mode with hot reloads
 CMD ["npm", "start"]
