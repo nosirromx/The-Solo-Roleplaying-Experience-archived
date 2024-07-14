@@ -9,6 +9,7 @@ function Header() {
         <header className="header">
             <img src={logo} alt="Solo Roleplaying Experience Logo" className="logo"/>
             <nav>
+                <Link to='/'>Home</Link>
                 <Link to='terminal'>Terminal</Link>
             </nav>
             <Login/>

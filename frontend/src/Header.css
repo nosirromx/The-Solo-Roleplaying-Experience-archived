@@ -16,3 +16,7 @@
     object-fit: contain;
     display: block;
 }
+
+a {
+    margin-left: 1rem;
+}
