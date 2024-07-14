@@ -1,0 +1,14 @@
+.login {
+    margin-left: auto; /* Align the login form to the right */
+    margin-right: 20px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login input,
+.login button {
+    margin-bottom: 10px;
+}

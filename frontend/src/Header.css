@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 100px; /* Set a fixed height for the header */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
