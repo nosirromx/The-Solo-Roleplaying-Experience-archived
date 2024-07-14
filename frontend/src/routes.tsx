@@ -1,20 +1,23 @@
+// routes.tsx
 import React from 'react';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import {createBrowserRouter, RouteObject, RouterProvider} from 'react-router-dom';
 import App from './App';
 import Terminal from './Terminal';
 
-const router = createBrowserRouter([
+// Define route objects
+const routes: RouteObject[] = [
     {
-        path: "/",
+        path: '/',
         element: <App/>,
-        children: [
-            {
-                path: "terminal", // Ensure this matches exactly
-                element: <Terminal/>,
-            },
-        ],
     },
-]);
+    {
+        path: '/terminal',
+        element: <Terminal/>,
+    },
+];
+
+// Create the router instance
+const router = createBrowserRouter(routes);
 
 const Routes = () => {
     return <RouterProvider router={router}/>;
